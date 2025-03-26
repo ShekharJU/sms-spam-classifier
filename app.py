@@ -5,6 +5,11 @@ import os
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
+import joblib
+
+tfidf = joblib.load('vectorizer.pkl')  # Make sure this file exists
+model = joblib.load('model.pkl')       # Make sure this file exists
+
 
 # Ensure NLTK data is available
 nltk.data.path.append(os.path.join(os.path.expanduser('~'), 'nltk_data'))
