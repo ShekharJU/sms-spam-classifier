@@ -1,4 +1,5 @@
 scikit-learn
 streamlit
 nltk
+joblib==1.3.2
 
